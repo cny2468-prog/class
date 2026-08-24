@@ -27,6 +27,7 @@ main{max-width:1500px;margin:auto;padding:0 clamp(14px,4vw,62px) 60px}.game-intr
 .measurement-view canvas{height:360px}.measurement-form{margin-top:18px;text-align:right}.measurement-equation{display:grid;grid-template-columns:1fr auto .75fr auto 1fr;align-items:end;gap:10px;text-align:center}.measurement-equation label{display:grid;gap:6px;color:var(--muted);font-size:10px;text-align:left}.measurement-equation label:last-child{grid-template-columns:1fr auto}.measurement-equation label:last-child>b{padding:10px 0}.measurement-equation label:last-child:before{content:"표본의 실제 크기";grid-column:1/3}.measurement-equation label:last-child input{min-width:0}.measurement-equation>span{padding-bottom:10px;color:var(--coral);font-weight:900}.measurement-equation>div{padding:9px;border-radius:9px;background:var(--mint)}.measurement-equation small,.measurement-equation strong{display:block}.measurement-equation small{color:var(--muted);font-size:9px}.measurement-form button{margin:16px 0 0 8px}.result-card{max-width:610px;margin:60px auto;padding:45px;text-align:center;border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,#f4fbf7,white);box-shadow:var(--shadow)}.result-icon{display:grid;place-items:center;width:74px;height:74px;margin:0 auto 18px;border-radius:50%;color:white;background:var(--teal);font-size:35px}.result-card h2{margin:4px 0;color:var(--deep);font-size:30px}.result-card>p:not(.eyebrow){color:var(--muted)}.case-stamp{display:inline-flex;align-items:center;gap:12px;margin:20px;padding:12px 18px;border:2px dashed var(--coral);border-radius:12px;transform:rotate(-2deg)}.case-stamp span{font-size:10px}.case-stamp strong{color:var(--coral);font:700 25px Georgia}.result-card button{margin:4px}.complete-dialog-icon{font-size:50px}
 dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24px 24px 8px 24px;color:var(--ink);background:var(--cream);box-shadow:0 30px 90px rgba(0,0,0,.28);text-align:left}dialog::backdrop{background:rgba(8,33,36,.65);backdrop-filter:blur(4px)}.dialog-heading{display:flex;justify-content:space-between}.dialog-heading h2,dialog>h2{margin:0;color:var(--deep)}.dialog-heading>button{border:0;background:none;cursor:pointer;font-size:27px}.guide-list{list-style:none;margin:20px 0;padding:0}.guide-list li{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}.guide-list li>span{color:var(--coral);font:700 18px Georgia}.guide-list strong{font-size:13px}.guide-list p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.5}.clue-dialog>p:not(.eyebrow){color:var(--muted);font-size:13px;line-height:1.6}.clue-choices{display:grid;gap:9px;margin:18px 0}.clue-choices button{padding:12px 14px;border:1px solid var(--line);border-radius:10px;color:var(--deep);background:white;cursor:pointer;font-weight:800;text-align:left}.clue-choices button:hover{border-color:var(--teal);background:var(--mint)}.clue-choices button.wrong-choice{color:#873c2b;border-color:#e6aaa0;background:#ffebe5}.clue-challenge-feedback{min-height:20px;margin-bottom:0!important;color:var(--teal)!important;font-weight:800}
 .feedback>span{background:var(--deep)}.feedback.error>span{background:#873c2b}.feedback.success>span{background:#245e43}
+.stage-timer{display:flex;align-items:center;gap:10px;margin:16px 0 0;padding:12px 14px;border:1px solid #c6d8d2;border-radius:12px;background:white}.stage-timer>span{font-size:24px}.stage-timer small,.stage-timer strong{display:block}.stage-timer small{color:var(--muted);font-size:9px}.stage-timer strong{color:var(--teal);font:800 22px Georgia}.stage-timer.warning{border-color:#eab15d;background:#fff7e5}.stage-timer.warning strong{color:#b16d18}.stage-timer.expired{border-color:#e39b8b;background:#ffebe5}.stage-timer.expired strong{color:#9a3f2c}.part-connectors{position:absolute;z-index:2;inset:0;width:100%;height:100%;pointer-events:none}.part-connectors polyline{fill:none;stroke:#ef6a4c;stroke-width:2;stroke-dasharray:5 4;vector-effect:non-scaling-stroke}.part-connectors polyline:after{content:""}.tool-card[draggable=true]{cursor:grab}.tool-card.selected{border-color:var(--coral);box-shadow:0 0 0 3px rgba(239,106,76,.16)}.tool-card.dragging{opacity:.55}.part-slot.drag-over{border-color:var(--coral);background:#fff0e9;transform:scale(1.04)}.view-eyepiece-button{position:absolute;z-index:5;left:38%;top:25px;padding:8px 11px;border:2px solid var(--coral);border-radius:999px;color:white;background:var(--coral);cursor:pointer;font-size:9px;font-weight:900;box-shadow:0 6px 14px rgba(239,106,76,.25)}.view-eyepiece-button:after{content:"";position:absolute;left:50%;top:100%;height:24px;border-left:2px dashed var(--coral)}.setup-ready-status{margin:14px 0 0;padding:11px;border-radius:10px;color:var(--muted);background:#edf3f0;font-size:10px;line-height:1.5;text-align:center}.setup-ready-status.ready{color:#245e43;background:#dff2e4;font-weight:900}.lens-view{border:14px solid rgba(23,59,63,.84);border-radius:50% / 42%;background:#eaf7f2}.rotation-action{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:13px;background:#fafcfb}.rotation-action>p{grid-column:1/3;margin:0;color:var(--muted);font-size:10px}.rotation-controls{display:flex;align-items:center;gap:9px}.rotation-controls>button{width:37px;height:34px;border:1px solid var(--line);border-radius:9px;background:white;cursor:pointer;font-size:19px}.rotation-controls label{display:grid;grid-template-columns:minmax(120px,1fr) auto;align-items:center;gap:5px;color:var(--muted);font-size:9px}.rotation-controls label input{grid-column:1/3;width:100%;padding:0}.rotation-controls label b{grid-row:1;grid-column:2;color:var(--teal);font-size:12px}.rotation-action>.primary-button{grid-row:1;grid-column:2}.calibration-action{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fafcfb}
 .room-stage-banner{display:flex;align-items:center;gap:14px;margin:-4px 0 16px;padding:15px 18px;border:2px solid #f0b29f;border-radius:16px;background:#fff0e9;box-shadow:0 8px 20px rgba(239,106,76,.12)}.room-stage-banner>span{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;color:white;background:var(--coral);font-size:17px;font-weight:900}.room-stage-banner strong{display:block;color:#9a3f2c;font-size:16px}.room-stage-banner p{margin:3px 0 0;color:#8b6359;font-size:11px;line-height:1.45}.bread-prop{position:absolute;left:63%;bottom:91px;width:28px;height:13px;border-radius:45% 55% 40% 45%;background:#d6a34b;box-shadow:inset 0 3px #edc777}.swab-prop{position:absolute;left:58%;bottom:110px;width:55px;height:5px;border-radius:9px;background:#f5f5ee;transform:rotate(-12deg)}.swab-prop:before,.swab-prop:after{content:"";position:absolute;top:-3px;width:12px;height:11px;border-radius:50%;background:#eef4f1}.swab-prop:before{left:-5px}.swab-prop:after{right:-5px}.mold-prop{position:absolute;right:15%;top:246px;width:23px;height:18px;border-radius:50%;background:radial-gradient(circle,#667c58 0 18%,transparent 20%),#9fb18f;background-size:8px 8px;opacity:.9}.magnifier-pickup{position:absolute;z-index:5;left:51%;bottom:88px;display:grid;place-items:center;width:85px;height:82px;padding:0;border:0;background:transparent;cursor:pointer;animation:magnifier-bounce 1.2s infinite}.magnifier-pickup span{font-size:58px;filter:drop-shadow(0 5px 5px rgba(23,59,63,.24))}.magnifier-pickup b{position:absolute;top:-24px;padding:6px 10px;border-radius:999px;color:white;background:var(--coral);font-size:10px;white-space:nowrap}@keyframes magnifier-bounce{50%{transform:translateY(-7px)}}.room-scene .hotspot{visibility:hidden;width:34px;height:34px;color:white;background:var(--coral);box-shadow:0 0 0 6px rgba(239,106,76,.2);opacity:0;pointer-events:none;animation:pulse 1.7s infinite;transition:opacity .25s}.room-scene.magnifier-ready{cursor:none}.room-scene.magnifier-ready .hotspot{visibility:visible;opacity:1;pointer-events:auto;cursor:none}.room-scene .hotspot span{display:inline!important}.room-scene .hotspot b{display:none!important}.room-scene .hotspot.found{color:white;background:var(--teal);box-shadow:none;animation:none}.room-scene .hotspot.found:after{display:none}.hotspot-yeast{left:64%;bottom:96px}.hotspot-cheek{left:59%;bottom:122px}.hotspot-mold{right:14%;top:244px}.magnifier-cursor{position:absolute;z-index:7;display:none;pointer-events:none;font-size:70px;line-height:1;transform:translate(-37%,-36%);filter:drop-shadow(0 8px 8px rgba(23,59,63,.3))}.magnifier-cursor.active{display:block}.inspection-panel{position:absolute;z-index:10;inset:34px;display:grid;grid-template-columns:minmax(180px,.85fr) minmax(240px,1.15fr);align-items:center;gap:25px;padding:28px;border:3px solid #f0c37a;border-radius:28px;background:rgba(255,253,248,.98);box-shadow:0 22px 60px rgba(23,59,63,.28);cursor:default}.inspection-visual{display:grid;place-items:center;aspect-ratio:1;border:14px solid rgba(255,255,255,.8);border-radius:50%;color:var(--deep);background:radial-gradient(circle at 40% 35%,white,var(--inspection-color,#e7bf75));box-shadow:0 0 0 7px #3b6766,0 12px 30px rgba(23,59,63,.2);font-size:74px}.inspection-copy h3{margin:3px 0 9px;color:var(--deep);font-size:25px}.inspection-copy>p:not(.eyebrow){margin:0;color:var(--muted);font-size:12px;line-height:1.7}.inspection-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:20px}.inspection-actions button{cursor:pointer}.measurement-equation input[readonly]{color:var(--teal);background:#e4f2ec}.auto-size-calculation{margin:10px 0 0!important;color:var(--teal);font-size:11px;font-weight:900;text-align:center}
 @media(max-width:950px){.game-shell{grid-template-columns:1fr}.detective-panel{border-left:0;border-top:1px solid var(--line)}.game-intro{min-height:170px}.game-intro>p{display:none}.setup-layout{grid-template-columns:1fr}.microscope-diagram{min-height:520px}.top-status span{display:none}.top-status span:last-child{display:block}.search-layout{grid-template-columns:1fr}.search-controls{display:grid;grid-template-columns:180px 1fr;gap:15px}}
 @media(max-width:620px){.site-header{height:65px;padding:0 12px}.brand small{display:none}.ghost-button{padding:8px 10px;font-size:10px}.top-status{display:none}main{padding:0 10px 35px}.game-intro{min-height:145px}.game-intro h1{font-size:34px}.quest-step b{display:none}.quest-progress>i{margin:0 5px}.game-screen{padding:18px 12px;min-height:610px}.scene-heading h2{font-size:19px}.room-scene{height:450px}.hotspot b{display:none!important}.game-shell{border-radius:18px}.setup-layout{grid-template-columns:1fr}.microscope-diagram{min-height:480px}.scope-base{width:300px}.part-slot small{display:none}.formula-row{flex-wrap:wrap}.search-controls{display:block}.measurement-equation{grid-template-columns:1fr auto 1fr}.measurement-equation>div{grid-column:3}.measurement-equation>span:nth-of-type(2){display:none}.measurement-equation label:last-child{grid-column:1/4}.detective-panel{padding:25px 17px}}
@@ -91,28 +92,31 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
           <div class="scene-heading"><div><p class="eyebrow">SCENE 02 · 현미경 준비</p><h2 id="setupTitle">현미경의 알맞은 위치에 도구를 장착하세요</h2></div><span class="status-chip">구조 관찰</span></div>
           <div class="setup-layout">
             <div class="microscope-diagram" aria-label="현미경 구조 그림">
+              <svg class="part-connectors" viewBox="0 0 600 540" preserveAspectRatio="none" aria-hidden="true"><polyline points="135,63 210,63 278,72"></polyline><polyline points="475,360 405,360 300,350"></polyline><polyline points="135,270 215,270 275,245"></polyline><polyline points="480,230 425,230 365,270"></polyline><polyline points="480,455 390,455 300,415"></polyline></svg>
               <div class="scope-eyepiece"></div><div class="scope-tube"></div><div class="scope-arm"></div><div class="scope-nose"><i></i><i></i><i></i></div><div class="scope-stage"></div><div class="scope-light"></div><div class="scope-base"></div><div class="focus-knob"></div>
               <button class="part-slot eyepiece-slot" id="eyepieceSlot" type="button"><span>1</span><b>접안렌즈</b><small>접안 마이크로미터 넣기</small></button>
               <button class="part-slot stage-slot" id="stageSlot" type="button"><span>2</span><b>재물대</b><small>대물 마이크로미터 놓기</small></button>
               <div class="part-label objective-label"><span>3</span><b>대물렌즈</b></div><div class="part-label focus-label"><span>4</span><b>조동·미동 나사</b></div><div class="part-label light-label"><span>5</span><b>광원</b></div>
+              <button class="view-eyepiece-button" id="lookThroughEyepiece" type="button" disabled>접안렌즈로 보기</button>
             </div>
             <div class="setup-panel">
               <p class="eyebrow">도구 가방</p>
-              <div class="tool-card" id="ocularTool"><span class="tool-icon">╂</span><div><strong>접안 마이크로미터</strong><p>접안렌즈 안에 넣는 단위 없는 눈금</p></div><b>미장착</b></div>
-              <div class="tool-card" id="stageTool"><span class="tool-icon">▥</span><div><strong>대물 마이크로미터</strong><p>재물대에 놓는 1눈금 10 μm의 기준자</p></div><b>미장착</b></div>
+              <div class="tool-card" id="ocularTool" data-tool="ocular" draggable="true" role="button" tabindex="0"><span class="tool-icon">╂</span><div><strong>접안 마이크로미터</strong><p>잡아서 현미경의 접안렌즈로 옮기세요</p></div><b>미장착</b></div>
+              <div class="tool-card" id="stageTool" data-tool="stage" draggable="true" role="button" tabindex="0"><span class="tool-icon">▥</span><div><strong>대물 마이크로미터</strong><p>잡아서 현미경의 재물대로 옮기세요</p></div><b>미장착</b></div>
               <fieldset class="lens-picker"><legend>대물렌즈 배율 선택</legend><button type="button" data-lens="4">4×</button><button type="button" data-lens="10" class="selected">10×</button><button type="button" data-lens="40">40×</button></fieldset>
               <div class="setup-note" id="lensAdvice">표본에 알맞은 권장 배율을 참고하되 원하는 배율을 선택할 수 있습니다.</div>
               <label class="sample-select">먼저 관찰할 표본<select id="sampleSelect"></select></label>
-              <button class="primary-button wide" id="startCalibration" type="button" disabled>눈금 보정 시작</button>
+              <p class="setup-ready-status" id="setupReadyStatus">두 도구를 알맞은 위치로 직접 옮겨 장착하세요.</p>
             </div>
           </div>
         </section>
 
         <section class="game-screen" id="calibrateScreen" data-screen="calibrate" aria-labelledby="calibrateTitle">
-          <div class="scene-heading"><div><p class="eyebrow">SCENE 03 · 마이크로미터 보정</p><h2 id="calibrateTitle">두 눈금에서 임의의 눈금선 하나를 일치시키세요</h2></div><span class="status-chip" id="calibrationChip">눈금선 조절</span></div>
+          <div class="scene-heading"><div><p class="eyebrow">SCENE 03 · 접안렌즈 시야</p><h2 id="calibrateTitle">기울어진 접안 눈금을 회전해 수평으로 맞추세요</h2></div><span class="status-chip" id="calibrationChip">각도 보정</span></div>
           <div class="lens-view"><div class="view-legend"><span><i class="ocular-dot"></i>접안 눈금</span><span><i class="stage-dot"></i>대물 눈금</span></div><canvas id="calibrationCanvas" tabindex="0" aria-label="접안 및 대물 마이크로미터 눈금"></canvas><p id="canvasGuide">아래쪽 주황 눈금을 좌우로 드래그하세요</p></div>
-          <div class="nudge-row"><button id="calLeft" type="button">−</button><span>미세 조절</span><button id="calRight" type="button">＋</button></div>
-          <div class="calibration-action" id="alignmentAction"><p>0이 아니어도 됩니다. 위·아래 눈금선 하나가 정확히 포개지도록 맞추세요.</p><button class="primary-button" id="checkZero" type="button">눈금선 일치 확인</button></div>
+          <div class="rotation-action" id="rotationAction"><div class="rotation-controls"><button id="rotateLeft" type="button">↶</button><label>접안 눈금 회전<input id="rotationControl" type="range" min="-15" max="15" step="0.5" value="0"><b id="rotationValue">0°</b></label><button id="rotateRight" type="button">↷</button></div><p>청록색 접안 눈금을 회전해 주황색 대물 눈금과 평행하게 만드세요.</p><button class="primary-button" id="checkRotation" type="button">평행 확인</button></div>
+          <div class="nudge-row hidden" id="alignmentNudge"><button id="calLeft" type="button">−</button><span>대물 눈금 좌우 이동</span><button id="calRight" type="button">＋</button></div>
+          <div class="calibration-action hidden" id="alignmentAction"><p>이제 0이 아닌 임의의 눈금선도 좋으니 두 눈금선을 정확히 포개세요.</p><button class="primary-button" id="checkZero" type="button">눈금선 일치 확인</button></div>
           <form class="calibration-form hidden" id="calibrationForm"><p>첫 일치선부터 점선까지 두 눈금의 칸 수를 입력하면 보정값이 자동으로 계산됩니다.</p><div class="formula-row"><label>대물 눈금 칸 수<input id="stageCountInput" type="number" min="1" required></label><span>× 10 μm ÷</span><label>접안 눈금 칸 수<input id="ocularCountInput" type="number" min="1" required></label><span>=</span><label>접안 1눈금<input id="calibrationInput" type="number" min="0" step="0.01" readonly required><b>μm</b></label></div><p class="auto-calculation" id="autoCalculation" aria-live="polite">두 칸 수를 입력하면 자동 계산됩니다.</p><button class="primary-button" type="submit">보정값 확인</button></form>
         </section>
 
@@ -132,6 +136,7 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
 
       <aside class="detective-panel">
         <p class="eyebrow">DETECTIVE NOTE</p><h2 id="missionTitle">돋보기부터 준비하라</h2><p id="missionText">책상 위 돋보기를 먼저 든 다음 작은 흔적과 현미경 도구를 확대해 조사하세요.</p>
+        <div class="stage-timer" id="stageTimer"><span>⏱</span><div><small id="timerStage">방 탐색 제한시간</small><strong id="timerValue">02:00</strong></div></div>
         <div class="feedback" id="feedback" role="status" aria-live="polite"><span>i</span><p>책상 위에서 반짝이는 돋보기를 눌러 먼저 들어 주세요.</p></div>
         <h3>수집 가방</h3><div class="inventory" id="inventory"><div data-inventory="magnifier"><span>🔍</span><b>돋보기</b><small>미발견</small></div><div data-inventory="microscope"><span>🔬</span><b>현미경</b><small>미발견</small></div><div data-inventory="ocular"><span>╂</span><b>접안 마이크로미터</b><small>미발견</small></div><div data-inventory="stage"><span>▥</span><b>대물 마이크로미터</b><small>미발견</small></div></div>
         <h3>표본 보관함</h3><div class="sample-tray" id="sampleTray"><p>아직 수집한 표본이 없습니다.</p></div>
@@ -140,7 +145,7 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
     </section>
   </main>
 
-  <dialog id="helpDialog"><div class="dialog-heading"><div><p class="eyebrow">HOW TO PLAY</p><h2>미크론 탐정 수사 순서</h2></div><button type="button" data-close-dialog>×</button></div><ol class="guide-list"><li><span>01</span><div><strong>돋보기를 먼저 들어요</strong><p>책상 위 돋보기를 누르면 방 안의 물음표가 나타납니다.</p></div></li><li><span>02</span><div><strong>돋보기로 확대해요</strong><p>돋보기를 물음표 위에 가져가 확대상을 보고 수집할지 결정합니다.</p></div></li><li><span>03</span><div><strong>현미경을 조립하고 보정해요</strong><p>도구를 장착해 눈금을 보정하고 원하는 대물렌즈 배율을 선택합니다.</p></div></li><li><span>04</span><div><strong>생물을 찾아 측정해요</strong><p>표본이 차지한 접안 눈금 수를 입력하면 실제 크기가 자동 계산됩니다.</p></div></li></ol><button class="primary-button wide" type="button" data-close-dialog>수사 시작</button></dialog>
+  <dialog id="helpDialog"><div class="dialog-heading"><div><p class="eyebrow">HOW TO PLAY</p><h2>미크론 탐정 수사 순서</h2></div><button type="button" data-close-dialog>×</button></div><ol class="guide-list"><li><span>01</span><div><strong>돋보기를 먼저 들어요</strong><p>책상 위 돋보기를 누르고 물음표의 확대상을 확인해 수집할 물건을 고릅니다.</p></div></li><li><span>02</span><div><strong>도구를 직접 장착해요</strong><p>접안 마이크로미터는 접안렌즈에, 대물 마이크로미터는 재물대에 끌어다 놓습니다.</p></div></li><li><span>03</span><div><strong>접안렌즈로 보정해요</strong><p>접안렌즈를 눌러 확대 시야에 들어가 대각선 눈금을 회전하고 실제 눈금선을 포갭니다.</p></div></li><li><span>04</span><div><strong>생물을 찾아 측정해요</strong><p>눈금 칸 수를 세면 보정값과 실제 크기가 자동 계산됩니다.</p></div></li><li><span>05</span><div><strong>제한시간 안에 해결해요</strong><p>빨리 끝낼수록 시간 점수를 얻고, 시간이 끝나면 10점이 깎인 뒤 단계별 힌트가 나옵니다.</p></div></li></ol><button class="primary-button wide" type="button" data-close-dialog>수사 시작</button></dialog>
   <dialog id="completeDialog"><div class="complete-dialog-icon">🏅</div><p class="eyebrow">ALL CASES SOLVED</p><h2>방 안의 작은 세계를 모두 밝혔습니다!</h2><p>접안 마이크로미터 보정부터 실제 크기 계산까지 완벽하게 해냈어요.</p><button class="primary-button wide" id="restartGame" type="button">처음부터 다시 수사</button></dialog>
   <script>
 "use strict";
@@ -180,6 +185,8 @@ const ROOM_INSPECTIONS = {
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+const STAGE_LIMITS = { room: 120, setup: 90, calibrate: 120, search: 90, measure: 60 };
+const STAGE_NAMES = { room: "방 탐색", setup: "현미경 준비", calibrate: "눈금 보정", search: "표본 탐색", measure: "크기 측정" };
 
 const state = {
   phase: "room",
@@ -187,11 +194,14 @@ const state = {
   foundSamples: new Set(),
   measuredSamples: new Set(),
   installed: { ocular: false, stage: false },
+  selectedTool: null,
   selectedSample: null,
   lens: 10,
   magnifierHeld: false,
   inspectionButton: null,
   calibrationOffset: 66,
+  ocularRotation: 0,
+  calibrationStep: "rotate",
   alignmentConfirmed: false,
   alignmentOcularIndex: 0,
   alignmentStageIndex: 0,
@@ -200,7 +210,10 @@ const state = {
   viewX: 530,
   viewY: 340,
   score: 100,
-  hintUsed: false
+  hintUsed: false,
+  timerId: null,
+  timerPhase: null,
+  timeRemaining: 0
 };
 
 const missionCopy = {
@@ -231,6 +244,67 @@ function changeScore(amount) {
   $("#scoreValue").textContent = state.score;
 }
 
+function formatTime(seconds) {
+  return `${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`;
+}
+
+function finishStageTimer() {
+  if (state.timerId) window.clearInterval(state.timerId);
+  state.timerId = null;
+  if (state.timerPhase && state.timeRemaining > 0) {
+    const limit = STAGE_LIMITS[state.timerPhase];
+    const bonus = Math.max(1, Math.ceil((state.timeRemaining / limit) * 10));
+    changeScore(bonus);
+  }
+  state.timerPhase = null;
+}
+
+function giveTimedHint(phase) {
+  let hint = "화면의 안내를 다시 확인해 보세요.";
+  if (phase === "room") hint = state.magnifierHeld ? "돋보기를 물음표 위에 올리고 확대 화면에서 필요한 물건을 수집하세요." : "책상 가운데 반짝이는 돋보기를 먼저 누르세요.";
+  if (phase === "setup") {
+    if (!state.installed.ocular) hint = "접안 마이크로미터를 잡아 현미경 위쪽 접안렌즈 칸으로 옮기세요.";
+    else if (!state.installed.stage) hint = "대물 마이크로미터를 잡아 가운데 재물대 칸으로 옮기세요.";
+    else hint = "현미경 그림 위쪽의 ‘접안렌즈로 보기’ 버튼을 누르세요.";
+  }
+  if (phase === "calibrate") {
+    if (state.calibrationStep === "rotate") hint = state.ocularRotation > 0 ? "청록색 접안 눈금을 반시계 방향으로 돌리세요." : "청록색 접안 눈금을 시계 방향으로 돌리세요.";
+    else if (!state.alignmentConfirmed) hint = "주황색 대물 눈금을 좌우로 움직여 청록색 눈금선 하나와 포개세요.";
+    else hint = `${state.lens}×에서는 대물 ${LENSES[state.lens].stageCount}칸과 접안 ${LENSES[state.lens].ocularCount}칸이 대응합니다.`;
+  }
+  if (phase === "search") hint = "미니맵의 초록 점 쪽으로 이동하고 신호가 ‘정확히 포착’일 때 관찰하세요.";
+  if (phase === "measure" && state.selectedSample) hint = `표본은 접안 눈금 ${state.selectedSample ? SAMPLES[state.selectedSample].actualSize / LENSES[state.lens].calibration : 0}칸을 차지합니다.`;
+  setFeedback(`시간 초과 힌트(-10점): ${hint}`, "error");
+}
+
+function startStageTimer(phase) {
+  if (state.timerId) window.clearInterval(state.timerId);
+  state.timerId = null;
+  state.timerPhase = phase in STAGE_LIMITS ? phase : null;
+  const timer = $("#stageTimer");
+  timer.classList.remove("warning", "expired");
+  if (!state.timerPhase) {
+    $("#timerStage").textContent = "수사 완료";
+    $("#timerValue").textContent = "완료";
+    return;
+  }
+  state.timeRemaining = STAGE_LIMITS[phase];
+  $("#timerStage").textContent = `${STAGE_NAMES[phase]} 제한시간`;
+  $("#timerValue").textContent = formatTime(state.timeRemaining);
+  state.timerId = window.setInterval(() => {
+    state.timeRemaining -= 1;
+    $("#timerValue").textContent = formatTime(Math.max(0, state.timeRemaining));
+    timer.classList.toggle("warning", state.timeRemaining <= 20 && state.timeRemaining > 0);
+    if (state.timeRemaining > 0) return;
+    window.clearInterval(state.timerId);
+    state.timerId = null;
+    timer.classList.remove("warning");
+    timer.classList.add("expired");
+    changeScore(-10);
+    giveTimedHint(phase);
+  }, 1000);
+}
+
 function updateProgress() {
   const order = ["room", "setup", "calibrate", "search", "measure"];
   const currentPhase = state.phase === "result" ? "measure" : state.phase;
@@ -242,6 +316,7 @@ function updateProgress() {
 }
 
 function showScreen(phase) {
+  if (state.timerPhase && state.timerPhase !== phase) finishStageTimer();
   state.phase = phase;
   $$(".game-screen").forEach(screen => screen.classList.toggle("active", screen.dataset.screen === phase));
   const copy = missionCopy[phase];
@@ -252,6 +327,7 @@ function showScreen(phase) {
     $("#missionText").textContent = "마우스를 움직이면 돋보기가 따라갑니다. 물음표에 가져가 확대상을 확인하세요.";
   }
   updateProgress();
+  startStageTimer(phase);
   window.scrollTo({ top: Math.max(0, $(".game-shell").offsetTop - 90), behavior: "smooth" });
   requestAnimationFrame(resizeCanvases);
 }
@@ -393,18 +469,40 @@ function updateSampleSelect() {
 function enterSetup() {
   state.installed.ocular = false;
   state.installed.stage = false;
-  $$(".part-slot,.tool-card").forEach(item => item.classList.remove("installed"));
+  state.selectedTool = null;
+  $$(".part-slot,.tool-card").forEach(item => item.classList.remove("installed", "selected", "drag-over"));
   $("#ocularTool").querySelector(":scope > b").textContent = "미장착";
   $("#stageTool").querySelector(":scope > b").textContent = "미장착";
-  $("#startCalibration").disabled = true;
+  $("#lookThroughEyepiece").disabled = true;
+  $("#setupReadyStatus").classList.remove("ready");
+  $("#setupReadyStatus").textContent = "두 도구를 알맞은 위치로 직접 옮겨 장착하세요.";
   updateSampleSelect();
   showScreen("setup");
-  setFeedback("현미경 구조를 살펴보고 접안렌즈와 재물대를 차례로 눌러 도구를 장착하세요.");
+  setFeedback("도구 카드를 잡아 접안 마이크로미터는 접안렌즈에, 대물 마이크로미터는 재물대에 직접 놓으세요.");
 }
 
-function installTool(kind) {
+function selectTool(kind) {
   if (!state.equipment[kind]) {
     setFeedback(`${ITEM_NAMES[kind]}를 방에서 먼저 찾아야 합니다.`, "error");
+    return;
+  }
+  if (state.installed[kind]) {
+    setFeedback(`${ITEM_NAMES[kind]}는 이미 장착했습니다.`);
+    return;
+  }
+  state.selectedTool = kind;
+  $$(".tool-card").forEach(card => card.classList.toggle("selected", card.dataset.tool === kind));
+  setFeedback(`${ITEM_NAMES[kind]}를 선택했습니다. ${kind === "ocular" ? "접안렌즈" : "재물대"} 위치로 옮기세요.`);
+}
+
+function installTool(kind, slotKind = kind) {
+  if (!kind) {
+    setFeedback("먼저 오른쪽 도구 가방에서 옮길 마이크로미터를 선택하세요.", "error");
+    return;
+  }
+  if (kind !== slotKind) {
+    changeScore(-5);
+    setFeedback(kind === "ocular" ? "접안 마이크로미터는 재물대가 아니라 접안렌즈 안에 넣어야 합니다." : "대물 마이크로미터는 접안렌즈가 아니라 재물대 위에 놓아야 합니다.", "error");
     return;
   }
   state.installed[kind] = true;
@@ -412,21 +510,33 @@ function installTool(kind) {
   const card = kind === "ocular" ? $("#ocularTool") : $("#stageTool");
   slot.classList.add("installed");
   card.classList.add("installed");
+  card.classList.remove("selected", "dragging");
   card.querySelector(":scope > b").textContent = "장착 완료";
-  $("#startCalibration").disabled = !(state.installed.ocular && state.installed.stage && state.selectedSample);
+  state.selectedTool = null;
+  updateSetupReady();
   setFeedback(kind === "ocular" ? "접안렌즈 안에 접안 마이크로미터를 넣었습니다." : "재물대 위에 대물 마이크로미터를 놓았습니다.", "success");
+}
+
+function updateSetupReady() {
+  const ready = state.installed.ocular && state.installed.stage && state.selectedSample;
+  $("#lookThroughEyepiece").disabled = !ready;
+  $("#setupReadyStatus").classList.toggle("ready", Boolean(ready));
+  $("#setupReadyStatus").textContent = ready
+    ? "장착 완료! 현미경 그림의 ‘접안렌즈로 보기’를 누르세요."
+    : "두 도구를 알맞은 위치로 직접 옮겨 장착하세요.";
 }
 
 function updateLensAdvice() {
   state.selectedSample = $("#sampleSelect").value || null;
   if (!state.selectedSample) {
     $("#lensAdvice").textContent = "측정할 수 있는 표본이 없습니다. 방에서 표본을 더 찾아보세요.";
+    updateSetupReady();
     return;
   }
   const sample = SAMPLES[state.selectedSample];
   const recommendation = state.lens === sample.lens ? "권장 배율을 선택했습니다." : `권장 배율은 ${sample.lens}×이지만 현재 ${state.lens}×로도 보정하고 측정할 수 있습니다.`;
   $("#lensAdvice").textContent = `${sample.name}: ${recommendation}`;
-  $("#startCalibration").disabled = !(state.installed.ocular && state.installed.stage);
+  updateSetupReady();
 }
 
 function chooseLens(button) {
@@ -436,18 +546,56 @@ function chooseLens(button) {
 }
 
 function startCalibration() {
+  if (!(state.installed.ocular && state.installed.stage && state.selectedSample)) {
+    setFeedback("두 마이크로미터를 직접 장착하고 관찰할 표본을 선택해야 합니다.", "error");
+    return;
+  }
   const sample = SAMPLES[state.selectedSample];
   state.calibrationOffset = Math.random() > .5 ? 68 : -58;
+  state.ocularRotation = Math.random() > .5 ? 9 : -8;
+  state.calibrationStep = "rotate";
   state.alignmentConfirmed = false;
-  $("#alignmentAction").classList.remove("hidden");
+  $("#rotationAction").classList.remove("hidden");
+  $("#alignmentAction").classList.add("hidden");
+  $("#alignmentNudge").classList.add("hidden");
   $("#calibrationForm").classList.add("hidden");
   $("#calibrationForm").reset();
+  $("#rotationControl").value = state.ocularRotation;
+  $("#rotationValue").textContent = `${state.ocularRotation}°`;
   $("#autoCalculation").textContent = "두 칸 수를 입력하면 자동 계산됩니다.";
-  $("#calibrateTitle").textContent = "두 눈금에서 임의의 눈금선 하나를 일치시키세요";
-  $("#calibrationChip").textContent = "눈금선 조절";
-  $("#canvasGuide").textContent = "아래쪽 주황 눈금을 좌우로 드래그하세요";
+  $("#calibrateTitle").textContent = "기울어진 접안 눈금을 회전해 수평으로 맞추세요";
+  $("#calibrationChip").textContent = "각도 보정";
+  $("#canvasGuide").textContent = "청록색 접안 눈금의 각도를 먼저 맞추세요";
   showScreen("calibrate");
-  setFeedback(`${sample.name}을(를) ${state.lens}× 대물렌즈로 관찰합니다. 0이 아니어도 좋으니 위·아래 눈금선 하나를 맞추세요.`);
+  setFeedback(`접안렌즈로 ${sample.name} 측정 준비 화면을 보고 있습니다. 먼저 대각선 접안 눈금을 회전해 대물 눈금과 평행하게 만드세요.`);
+}
+
+function setOcularRotation(value) {
+  if (state.calibrationStep !== "rotate") return;
+  state.ocularRotation = clamp(Number(value), -15, 15);
+  $("#rotationControl").value = state.ocularRotation;
+  $("#rotationValue").textContent = `${state.ocularRotation}°`;
+  drawCalibration();
+}
+
+function checkRotation() {
+  if (Math.abs(state.ocularRotation) > 1) {
+    changeScore(-5);
+    setFeedback(state.ocularRotation > 0 ? "청록색 접안 눈금이 오른쪽 위로 기울었습니다. 반시계 방향으로 더 돌리세요." : "청록색 접안 눈금이 왼쪽 위로 기울었습니다. 시계 방향으로 더 돌리세요.", "error");
+    return;
+  }
+  state.ocularRotation = 0;
+  state.calibrationStep = "align";
+  $("#rotationControl").value = 0;
+  $("#rotationValue").textContent = "0°";
+  $("#rotationAction").classList.add("hidden");
+  $("#alignmentNudge").classList.remove("hidden");
+  $("#alignmentAction").classList.remove("hidden");
+  $("#calibrateTitle").textContent = "평행한 두 눈금에서 눈금선 하나를 포개세요";
+  $("#calibrationChip").textContent = "위치 보정";
+  $("#canvasGuide").textContent = "주황색 대물 눈금을 좌우로 드래그하세요";
+  setFeedback("두 눈금이 평행해졌습니다. 이제 대물 눈금을 좌우로 움직여 실제 눈금선끼리 포개세요.", "success");
+  drawCalibration();
 }
 
 function resizeCanvas(canvas, context, drawFunction) {
@@ -503,28 +651,34 @@ function drawCalibration() {
   const ocularSpacing = Math.min(38, (width - 110) / 10);
   const lens = LENSES[state.lens];
   const stageSpacing = ocularSpacing * 10 / lens.calibration;
+  const centerY = height / 2;
   if (state.alignmentConfirmed) {
     state.calibrationOffset = state.alignmentOcularIndex * ocularSpacing - state.alignmentStageIndex * stageSpacing;
   }
-  drawScale(calibrationContext, width, 120, origin, ocularSpacing, "#173b3f", "all");
-  drawScale(calibrationContext, width, 265, origin + state.calibrationOffset, stageSpacing, "#e75e41", "bottom");
+  calibrationContext.save();
+  calibrationContext.translate(width / 2, centerY);
+  calibrationContext.rotate(state.ocularRotation * Math.PI / 180);
+  calibrationContext.translate(-width / 2, -centerY);
+  drawScale(calibrationContext, width, centerY - 6, origin, ocularSpacing, "#14766f", "all");
+  calibrationContext.restore();
+  drawScale(calibrationContext, width, centerY + 6, origin + state.calibrationOffset, stageSpacing, "#e75e41", "bottom");
   if (state.alignmentConfirmed) {
     const startX = origin + state.alignmentOcularIndex * ocularSpacing;
     const endX = startX + lens.ocularCount * ocularSpacing;
     calibrationContext.save();
     calibrationContext.setLineDash([5, 5]); calibrationContext.strokeStyle = "#14766f"; calibrationContext.lineWidth = 2;
     [startX, endX].forEach(x => {
-      calibrationContext.beginPath(); calibrationContext.moveTo(x, 72); calibrationContext.lineTo(x, 315); calibrationContext.stroke();
+      calibrationContext.beginPath(); calibrationContext.moveTo(x, centerY - 65); calibrationContext.lineTo(x, centerY + 72); calibrationContext.stroke();
     });
     calibrationContext.restore();
     calibrationContext.fillStyle = "#14766f"; calibrationContext.font = "800 11px sans-serif";
-    calibrationContext.fillText("첫 일치", startX, 345);
-    calibrationContext.fillText("다시 일치", endX, 345);
+    calibrationContext.fillText("첫 일치", startX, centerY + 95);
+    calibrationContext.fillText("다시 일치", endX, centerY + 95);
   }
 }
 
 function adjustCalibration(delta) {
-  if (state.alignmentConfirmed || state.phase !== "calibrate") return;
+  if (state.alignmentConfirmed || state.phase !== "calibrate" || state.calibrationStep !== "align") return;
   state.calibrationOffset = clamp(state.calibrationOffset + delta, -90, 120);
   drawCalibration();
 }
@@ -561,7 +715,9 @@ function checkZero() {
   state.alignmentOcularIndex = match.ocularIndex;
   state.alignmentStageIndex = match.stageIndex;
   state.alignmentConfirmed = true;
+  state.calibrationStep = "count";
   $("#alignmentAction").classList.add("hidden");
+  $("#alignmentNudge").classList.add("hidden");
   $("#calibrationForm").classList.remove("hidden");
   $("#calibrateTitle").textContent = "두 눈금이 다시 만나는 지점을 계산하세요";
   $("#calibrationChip").textContent = "눈금 보정";
@@ -843,11 +999,40 @@ $("#roomScene").addEventListener("pointerleave", () => $("#magnifierCursor").cla
 $("#leaveInspection").addEventListener("click", closeInspection);
 $("#collectInspection").addEventListener("click", collectInspection);
 $("#goSetup").addEventListener("click", enterSetup);
-$("#eyepieceSlot").addEventListener("click", () => installTool("ocular"));
-$("#stageSlot").addEventListener("click", () => installTool("stage"));
+$$('[data-tool]').forEach(card => {
+  const kind = card.dataset.tool;
+  card.addEventListener("click", () => selectTool(kind));
+  card.addEventListener("keydown", event => {
+    if (!["Enter", " "].includes(event.key)) return;
+    event.preventDefault(); selectTool(kind);
+  });
+  card.addEventListener("dragstart", event => {
+    selectTool(kind);
+    if (state.selectedTool !== kind) { event.preventDefault(); return; }
+    event.dataTransfer.setData("text/plain", kind);
+    event.dataTransfer.effectAllowed = "move";
+    card.classList.add("dragging");
+  });
+  card.addEventListener("dragend", () => card.classList.remove("dragging"));
+});
+[["eyepieceSlot", "ocular"], ["stageSlot", "stage"]].forEach(([id, slotKind]) => {
+  const slot = $(`#${id}`);
+  slot.addEventListener("click", () => installTool(state.selectedTool, slotKind));
+  slot.addEventListener("dragover", event => { event.preventDefault(); slot.classList.add("drag-over"); });
+  slot.addEventListener("dragleave", () => slot.classList.remove("drag-over"));
+  slot.addEventListener("drop", event => {
+    event.preventDefault();
+    slot.classList.remove("drag-over");
+    installTool(event.dataTransfer.getData("text/plain"), slotKind);
+  });
+});
 $$('[data-lens]').forEach(button => button.addEventListener("click", () => chooseLens(button)));
 $("#sampleSelect").addEventListener("change", updateLensAdvice);
-$("#startCalibration").addEventListener("click", startCalibration);
+$("#lookThroughEyepiece").addEventListener("click", startCalibration);
+$("#rotationControl").addEventListener("input", event => setOcularRotation(event.target.value));
+$("#rotateLeft").addEventListener("click", () => setOcularRotation(state.ocularRotation - .5));
+$("#rotateRight").addEventListener("click", () => setOcularRotation(state.ocularRotation + .5));
+$("#checkRotation").addEventListener("click", checkRotation);
 $("#calLeft").addEventListener("click", () => adjustCalibration(-2));
 $("#calRight").addEventListener("click", () => adjustCalibration(2));
 $("#checkZero").addEventListener("click", checkZero);
@@ -856,7 +1041,7 @@ $("#stageCountInput").addEventListener("input", updateAutomaticCalibration);
 $("#ocularCountInput").addEventListener("input", updateAutomaticCalibration);
 
 calibrationCanvas.addEventListener("pointerdown", event => {
-  if (state.alignmentConfirmed) return;
+  if (state.alignmentConfirmed || state.calibrationStep !== "align") return;
   state.dragging = true; state.lastPointerX = event.clientX; calibrationCanvas.setPointerCapture(event.pointerId);
 });
 calibrationCanvas.addEventListener("pointermove", event => {
@@ -867,7 +1052,9 @@ calibrationCanvas.addEventListener("pointerup", () => state.dragging = false);
 calibrationCanvas.addEventListener("pointercancel", () => state.dragging = false);
 calibrationCanvas.addEventListener("keydown", event => {
   if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
-  event.preventDefault(); adjustCalibration(event.key === "ArrowLeft" ? -2 : 2);
+  event.preventDefault();
+  if (state.calibrationStep === "rotate") setOcularRotation(state.ocularRotation + (event.key === "ArrowLeft" ? -.5 : .5));
+  else adjustCalibration(event.key === "ArrowLeft" ? -2 : 2);
 });
 
 $$('[data-move]').forEach(button => {
@@ -899,6 +1086,7 @@ updateCollectionUI();
 updateRoomClue();
 updateProgress();
 resizeCanvases();
+startStageTimer("room");
 
 </script>
 </body>
