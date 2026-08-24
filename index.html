@@ -27,6 +27,7 @@ main{max-width:1500px;margin:auto;padding:0 clamp(14px,4vw,62px) 60px}.game-intr
 .measurement-view canvas{height:360px}.measurement-form{margin-top:18px;text-align:right}.measurement-equation{display:grid;grid-template-columns:1fr auto .75fr auto 1fr;align-items:end;gap:10px;text-align:center}.measurement-equation label{display:grid;gap:6px;color:var(--muted);font-size:10px;text-align:left}.measurement-equation label:last-child{grid-template-columns:1fr auto}.measurement-equation label:last-child>b{padding:10px 0}.measurement-equation label:last-child:before{content:"표본의 실제 크기";grid-column:1/3}.measurement-equation label:last-child input{min-width:0}.measurement-equation>span{padding-bottom:10px;color:var(--coral);font-weight:900}.measurement-equation>div{padding:9px;border-radius:9px;background:var(--mint)}.measurement-equation small,.measurement-equation strong{display:block}.measurement-equation small{color:var(--muted);font-size:9px}.measurement-form button{margin:16px 0 0 8px}.result-card{max-width:610px;margin:60px auto;padding:45px;text-align:center;border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,#f4fbf7,white);box-shadow:var(--shadow)}.result-icon{display:grid;place-items:center;width:74px;height:74px;margin:0 auto 18px;border-radius:50%;color:white;background:var(--teal);font-size:35px}.result-card h2{margin:4px 0;color:var(--deep);font-size:30px}.result-card>p:not(.eyebrow){color:var(--muted)}.case-stamp{display:inline-flex;align-items:center;gap:12px;margin:20px;padding:12px 18px;border:2px dashed var(--coral);border-radius:12px;transform:rotate(-2deg)}.case-stamp span{font-size:10px}.case-stamp strong{color:var(--coral);font:700 25px Georgia}.result-card button{margin:4px}.complete-dialog-icon{font-size:50px}
 dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24px 24px 8px 24px;color:var(--ink);background:var(--cream);box-shadow:0 30px 90px rgba(0,0,0,.28);text-align:left}dialog::backdrop{background:rgba(8,33,36,.65);backdrop-filter:blur(4px)}.dialog-heading{display:flex;justify-content:space-between}.dialog-heading h2,dialog>h2{margin:0;color:var(--deep)}.dialog-heading>button{border:0;background:none;cursor:pointer;font-size:27px}.guide-list{list-style:none;margin:20px 0;padding:0}.guide-list li{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}.guide-list li>span{color:var(--coral);font:700 18px Georgia}.guide-list strong{font-size:13px}.guide-list p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.5}.clue-dialog>p:not(.eyebrow){color:var(--muted);font-size:13px;line-height:1.6}.clue-choices{display:grid;gap:9px;margin:18px 0}.clue-choices button{padding:12px 14px;border:1px solid var(--line);border-radius:10px;color:var(--deep);background:white;cursor:pointer;font-weight:800;text-align:left}.clue-choices button:hover{border-color:var(--teal);background:var(--mint)}.clue-choices button.wrong-choice{color:#873c2b;border-color:#e6aaa0;background:#ffebe5}.clue-challenge-feedback{min-height:20px;margin-bottom:0!important;color:var(--teal)!important;font-weight:800}
 .feedback>span{background:var(--deep)}.feedback.error>span{background:#873c2b}.feedback.success>span{background:#245e43}
+.hotspot{width:64px;height:64px;color:transparent;background:transparent;box-shadow:none;animation:none}.hotspot span,.hotspot b{display:none!important}.hotspot:hover,.hotspot:focus{background:transparent;box-shadow:none}.hotspot:focus-visible{outline:2px dashed rgba(23,59,63,.55);outline-offset:2px}.hotspot.found{color:transparent;background:transparent}.hotspot.found:after{content:"✓";position:absolute;left:50%;top:50%;display:grid;place-items:center;width:25px;height:25px;transform:translate(-50%,-50%);border-radius:50%;color:white;background:var(--teal);font-size:13px}.hotspot.wrong{background:transparent}.measurement-equation input[readonly]{color:var(--teal);background:#e4f2ec}.auto-size-calculation{margin:10px 0 0!important;color:var(--teal);font-size:11px;font-weight:900;text-align:center}
 @media(max-width:950px){.game-shell{grid-template-columns:1fr}.detective-panel{border-left:0;border-top:1px solid var(--line)}.game-intro{min-height:170px}.game-intro>p{display:none}.setup-layout{grid-template-columns:1fr}.microscope-diagram{min-height:520px}.top-status span{display:none}.top-status span:last-child{display:block}.search-layout{grid-template-columns:1fr}.search-controls{display:grid;grid-template-columns:180px 1fr;gap:15px}}
 @media(max-width:620px){.site-header{height:65px;padding:0 12px}.brand small{display:none}.ghost-button{padding:8px 10px;font-size:10px}.top-status{display:none}main{padding:0 10px 35px}.game-intro{min-height:145px}.game-intro h1{font-size:34px}.quest-step b{display:none}.quest-progress>i{margin:0 5px}.game-screen{padding:18px 12px;min-height:610px}.scene-heading h2{font-size:19px}.room-scene{height:450px}.hotspot b{display:none!important}.game-shell{border-radius:18px}.setup-layout{grid-template-columns:1fr}.microscope-diagram{min-height:480px}.scope-base{width:300px}.part-slot small{display:none}.formula-row{flex-wrap:wrap}.search-controls{display:block}.measurement-equation{grid-template-columns:1fr auto 1fr}.measurement-equation>div{grid-column:3}.measurement-equation>span:nth-of-type(2){display:none}.measurement-equation label:last-child{grid-column:1/4}.detective-panel{padding:25px 17px}}
 @media(prefers-reduced-motion:reduce){.hotspot{animation:none}}
@@ -43,7 +44,7 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
   <main id="game">
     <section class="game-intro" aria-labelledby="gameTitle">
       <div><p class="eyebrow">MICRON DETECTIVE LAB</p><h1 id="gameTitle">방 안에 숨은 <em>작은 세계</em>를 찾아라!</h1></div>
-      <p id="storyText">평범해 보이는 방에도 눈에 보이지 않는 생물이 숨어 있습니다. 단서를 찾고 현미경을 준비해 실제 크기를 밝혀내세요.</p>
+      <p id="storyText">평범해 보이는 방에도 눈에 보이지 않는 생물이 숨어 있습니다. 방을 직접 조사하고 현미경을 준비해 실제 크기를 밝혀내세요.</p>
     </section>
     <nav class="quest-progress" aria-label="탐구 진행 단계">
       <div class="quest-step active" data-step="room"><span>1</span><b>방 탐색</b></div><i></i>
@@ -56,7 +57,7 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
     <section class="game-shell">
       <div class="scene-column">
         <section class="game-screen active" id="roomScreen" data-screen="room" aria-labelledby="roomTitle">
-          <div class="scene-heading"><div><p class="eyebrow">SCENE 01 · 탐정의 방</p><h2 id="roomTitle">단서를 읽고 알맞은 곳을 추리하세요</h2></div><span class="status-chip">추리 중</span></div>
+          <div class="scene-heading"><div><p class="eyebrow">SCENE 01 · 탐정의 방</p><h2 id="roomTitle">방 안의 물건을 직접 눌러 조사하세요</h2></div><span class="status-chip">탐색 중</span></div>
           <div class="room-scene" id="roomScene" aria-label="여러 물건이 놓인 방 안 탐색 장면">
             <div class="room-window"><span></span><span></span><span></span><span></span></div><div class="curtain left"></div><div class="curtain right"></div>
             <div class="wall-picture">작은 것이<br>세상을 바꾼다</div><div class="shelf"><span>BOOK</span><span>SCIENCE</span><span>LAB</span></div>
@@ -74,7 +75,7 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
             <button class="hotspot hotspot-books" data-decoy="books" type="button"><span>?</span><b>선반 위 책</b></button>
             <button class="hotspot hotspot-rug" data-decoy="rug" type="button"><span>?</span><b>바닥의 양탄자</b></button>
           </div>
-          <div class="room-actions"><p><strong>탐색 방법</strong><span id="roomClue">어느 물음표든 자유롭게 선택하세요. 관련 문제를 맞히면 수집됩니다.</span></p><button class="primary-button" id="goSetup" type="button" disabled>현미경실로 이동</button></div>
+          <div class="room-actions"><p><strong>탐색 현황</strong><span id="roomClue">방 안의 물건을 직접 눌러 조사하세요.</span></p><button class="primary-button" id="goSetup" type="button" disabled>현미경실로 이동</button></div>
         </section>
 
         <section class="game-screen" id="setupScreen" data-screen="setup" aria-labelledby="setupTitle">
@@ -114,15 +115,15 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
         <section class="game-screen" id="measureScreen" data-screen="measure" aria-labelledby="measureTitle">
           <div class="scene-heading"><div><p class="eyebrow">SCENE 05 · 크기 측정</p><h2 id="measureTitle">접안 눈금으로 <span id="measureSampleName">표본</span>의 크기를 재세요</h2></div><span class="status-chip">측정 중</span></div>
           <div class="measurement-view"><canvas id="measurementCanvas" aria-label="접안 눈금에 맞춰진 표본"></canvas></div>
-          <form class="measurement-form" id="measurementForm"><div class="measurement-equation"><label>표본이 차지한 접안 눈금 수<input id="divisionInput" type="number" min="0" step="0.1" required></label><span>×</span><div><small>접안 1눈금</small><strong id="knownCalibration">10 μm</strong></div><span>=</span><label>표본의 실제 크기<input id="sizeInput" type="number" min="0" step="0.1" required><b>μm</b></label></div><button class="hint-button" id="measureHint" type="button">측정 힌트</button><button class="primary-button" type="submit">측정값 확인</button></form>
+          <form class="measurement-form" id="measurementForm"><div class="measurement-equation"><label>표본이 차지한 접안 눈금 수<input id="divisionInput" type="number" min="0" step="0.1" required></label><span>×</span><div><small>접안 1눈금</small><strong id="knownCalibration">10 μm</strong></div><span>=</span><label>표본의 실제 크기<input id="sizeInput" type="number" min="0" step="0.1" readonly required><b>μm</b></label></div><p class="auto-size-calculation" id="autoSizeCalculation" aria-live="polite">접안 눈금 수를 입력하면 실제 크기가 자동 계산됩니다.</p><button class="hint-button" id="measureHint" type="button">측정 힌트</button><button class="primary-button" type="submit">측정값 확인</button></form>
         </section>
 
         <section class="game-screen" id="resultScreen" data-screen="result" aria-labelledby="resultTitle"><div class="result-card"><div class="result-icon" id="resultIcon">✓</div><p class="eyebrow">CASE SOLVED</p><h2 id="resultTitle"><span id="resultName">표본</span> 측정 성공!</h2><p id="resultText"></p><div class="case-stamp"><span>실제 크기</span><strong id="resultSize">0 μm</strong></div><button class="primary-button" id="nextCase" type="button">다음 표본 수사</button><button class="ghost-button" id="backToRoom" type="button">방으로 돌아가기</button></div></section>
       </div>
 
       <aside class="detective-panel">
-        <p class="eyebrow">DETECTIVE NOTE</p><h2 id="missionTitle">방 안의 단서를 찾아라</h2><p id="missionText">현미경과 두 종류의 마이크로미터를 찾은 뒤, 조사할 표본도 수집하세요.</p>
-        <div class="feedback" id="feedback" role="status" aria-live="polite"><span>i</span><p>원하는 수상한 곳을 고르고 관련 추리 문제를 해결하세요.</p></div>
+        <p class="eyebrow">DETECTIVE NOTE</p><h2 id="missionTitle">방 안을 직접 조사하라</h2><p id="missionText">방 안의 물건을 눌러 현미경 도구와 조사할 표본을 자유롭게 수집하세요.</p>
+        <div class="feedback" id="feedback" role="status" aria-live="polite"><span>i</span><p>방 안의 물건을 직접 눌러 현미경 도구와 표본인지 확인하세요.</p></div>
         <h3>수집 가방</h3><div class="inventory" id="inventory"><div data-inventory="microscope"><span>🔬</span><b>현미경</b><small>미발견</small></div><div data-inventory="ocular"><span>╂</span><b>접안 마이크로미터</b><small>미발견</small></div><div data-inventory="stage"><span>▥</span><b>대물 마이크로미터</b><small>미발견</small></div></div>
         <h3>표본 보관함</h3><div class="sample-tray" id="sampleTray"><p>아직 수집한 표본이 없습니다.</p></div>
         <details class="concept-note"><summary>핵심 개념 확인</summary><p>접안 마이크로미터에는 정해진 단위가 없습니다. 대물렌즈를 바꿀 때마다 1눈금이 10 μm인 대물 마이크로미터와 비교해 보정해야 합니다. 보정할 때 두 눈금의 0이 아니라 임의의 눈금선끼리 맞춰도 됩니다.</p></details>
@@ -130,8 +131,7 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
     </section>
   </main>
 
-  <dialog id="clueDialog" class="clue-dialog"><div class="dialog-heading"><div><p class="eyebrow">CLUE CHALLENGE</p><h2 id="clueDialogTitle">수상한 곳</h2></div><button type="button" data-close-dialog>×</button></div><p id="clueQuestion"></p><div class="clue-choices" id="clueChoices"></div><p class="clue-challenge-feedback" id="clueChallengeFeedback" aria-live="polite">알맞은 답을 고르세요.</p></dialog>
-  <dialog id="helpDialog"><div class="dialog-heading"><div><p class="eyebrow">HOW TO PLAY</p><h2>미크론 탐정 수사 순서</h2></div><button type="button" data-close-dialog>×</button></div><ol class="guide-list"><li><span>01</span><div><strong>수상한 곳을 자유롭게 조사해요</strong><p>원하는 물음표를 누르고 관련 추리 문제를 맞혀 현미경, 마이크로미터와 표본을 찾습니다.</p></div></li><li><span>02</span><div><strong>현미경을 조립해요</strong><p>두 마이크로미터를 장착하고 관찰할 대물렌즈 배율을 직접 선택합니다.</p></div></li><li><span>03</span><div><strong>눈금을 보정해요</strong><p>임의의 두 눈금선을 맞춘 뒤 다시 일치하는 지점까지 칸 수를 세면 보정값이 자동 계산됩니다.</p></div></li><li><span>04</span><div><strong>생물을 찾아 측정해요</strong><p>슬라이드를 움직여 생물을 찾고, 차지한 접안 눈금 수로 실제 크기를 계산합니다.</p></div></li></ol><button class="primary-button wide" type="button" data-close-dialog>수사 시작</button></dialog>
+  <dialog id="helpDialog"><div class="dialog-heading"><div><p class="eyebrow">HOW TO PLAY</p><h2>미크론 탐정 수사 순서</h2></div><button type="button" data-close-dialog>×</button></div><ol class="guide-list"><li><span>01</span><div><strong>방 안의 물건을 직접 조사해요</strong><p>별도 표시나 단서 없이 물건을 눌러 현미경, 마이크로미터와 표본을 자유롭게 수집합니다.</p></div></li><li><span>02</span><div><strong>현미경을 조립해요</strong><p>두 마이크로미터를 장착하고 관찰할 대물렌즈 배율을 직접 선택합니다.</p></div></li><li><span>03</span><div><strong>눈금을 보정해요</strong><p>임의의 두 눈금선을 맞춘 뒤 다시 일치하는 지점까지 칸 수를 세면 보정값이 자동 계산됩니다.</p></div></li><li><span>04</span><div><strong>생물을 찾아 측정해요</strong><p>표본이 차지한 접안 눈금 수를 입력하면 실제 크기가 자동 계산됩니다.</p></div></li></ol><button class="primary-button wide" type="button" data-close-dialog>수사 시작</button></dialog>
   <dialog id="completeDialog"><div class="complete-dialog-icon">🏅</div><p class="eyebrow">ALL CASES SOLVED</p><h2>방 안의 작은 세계를 모두 밝혔습니다!</h2><p>접안 마이크로미터 보정부터 실제 크기 계산까지 완벽하게 해냈어요.</p><button class="primary-button wide" id="restartGame" type="button">처음부터 다시 수사</button></dialog>
   <script>
 "use strict";
@@ -155,16 +155,6 @@ const ITEM_NAMES = {
   stage: "대물 마이크로미터"
 };
 
-const ROOM_CHALLENGES = {
-  microscope: { question: "이 기구가 현미경 수사에 필요한 가장 중요한 이유는?", answer: "눈에 보이지 않는 작은 물체를 확대한다", choices: ["방 안의 온도를 측정한다", "표본의 무게를 잰다"] },
-  ocular: { question: "접안 마이크로미터 눈금의 특징은?", answer: "그 자체에는 정해진 단위가 없다", choices: ["항상 1눈금이 10 μm이다", "대물렌즈 밖에 붙여 사용한다"] },
-  stage: { question: "대물 마이크로미터 1눈금의 실제 크기는?", answer: "10 μm", choices: ["1 μm", "100 μm"] },
-  euglena: { question: "어항의 초록 물에서 유글레나를 예상할 수 있는 까닭은?", answer: "엽록체가 있어 빛을 받으면 광합성을 한다", choices: ["꽃가루를 만들어 낸다", "양파처럼 여러 겹의 껍질이 있다"] },
-  onion: { question: "양파 표피세포를 잘 관찰하기 위한 표본은?", answer: "얇게 벗긴 투명한 표피", choices: ["두꺼운 양파 전체", "말린 뿌리 한 덩어리"] },
-  pollen: { question: "꽃가루가 원래 만들어지는 곳은?", answer: "꽃의 수술", choices: ["식물의 뿌리", "잎의 기공"] },
-  paramecium: { question: "짚신벌레가 물속에서 움직일 때 주로 사용하는 것은?", answer: "몸 표면의 섬모", choices: ["식물의 뿌리털", "단단한 세포벽"] }
-};
-
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
@@ -177,8 +167,6 @@ const state = {
   installed: { ocular: false, stage: false },
   selectedSample: null,
   lens: 10,
-  pendingRoomKey: null,
-  pendingRoomButton: null,
   calibrationOffset: 66,
   alignmentConfirmed: false,
   alignmentOcularIndex: 0,
@@ -192,7 +180,7 @@ const state = {
 };
 
 const missionCopy = {
-  room: ["방 안의 단서를 찾아라", "현미경과 두 종류의 마이크로미터를 찾은 뒤, 조사할 표본도 수집하세요."],
+  room: ["방 안을 직접 조사하라", "방 안의 물건을 눌러 현미경과 두 종류의 마이크로미터, 조사할 표본을 자유롭게 수집하세요."],
   setup: ["현미경을 올바르게 준비하라", "접안렌즈와 재물대의 위치를 확인하고 두 마이크로미터를 알맞게 장착하세요."],
   calibrate: ["접안 눈금의 값을 구하라", "임의의 눈금선 하나를 맞춘 뒤 다시 일치하는 지점까지 칸 수를 세어 보정값을 구하세요."],
   search: ["슬라이드 속 생물을 찾아라", "재물대를 움직여 생물 신호를 추적하고 십자선 중앙에서 관찰하세요."],
@@ -265,11 +253,11 @@ function updateCollectionUI() {
 
 function updateRoomClue() {
   const foundCount = Object.values(state.equipment).filter(Boolean).length + state.foundSamples.size;
-  const remaining = Object.keys(ROOM_CHALLENGES).length - foundCount;
+  const remaining = Object.keys(ITEM_NAMES).length + Object.keys(SAMPLES).length - foundCount;
   if (remaining > 0) {
-    $("#roomClue").textContent = `어느 물음표든 자유롭게 선택하세요. 관련 문제를 맞히면 수집됩니다. 남은 단서 ${remaining}개`;
+    $("#roomClue").textContent = `방 안의 물건을 직접 눌러 조사하세요. 아직 찾지 못한 물건 ${remaining}개`;
   } else {
-    $("#roomClue").textContent = "모든 단서를 해결했습니다. 수집한 표본을 현미경으로 조사하세요.";
+    $("#roomClue").textContent = "현미경 도구와 표본을 모두 찾았습니다. 수집한 표본을 조사하세요.";
   }
 }
 
@@ -285,46 +273,13 @@ function findRoomItem(button) {
     void button.offsetWidth;
     button.classList.add("wrong");
     window.setTimeout(() => button.classList.remove("wrong"), 450);
-    setFeedback("이곳에는 현미경 수사에 필요한 단서가 없습니다. 다른 수상한 곳을 추리해 보세요.", "error");
+    setFeedback("이곳에는 현미경 도구나 채취할 표본이 없습니다. 다른 물건을 조사해 보세요.", "error");
     return;
   }
-  openRoomChallenge(key, button);
+  collectRoomItem(key, button);
 }
 
-function openRoomChallenge(key, button) {
-  const challenge = ROOM_CHALLENGES[key];
-  state.pendingRoomKey = key;
-  state.pendingRoomButton = button;
-  $("#clueDialogTitle").textContent = button.querySelector("b").textContent;
-  $("#clueQuestion").textContent = challenge.question;
-  $("#clueChallengeFeedback").textContent = "알맞은 답을 고르세요.";
-  const choices = [challenge.answer, ...challenge.choices].sort(() => Math.random() - .5);
-  const choiceBox = $("#clueChoices");
-  choiceBox.innerHTML = "";
-  choices.forEach(choice => {
-    const choiceButton = document.createElement("button");
-    choiceButton.type = "button";
-    choiceButton.textContent = choice;
-    choiceButton.addEventListener("click", () => answerRoomChallenge(choice, choiceButton));
-    choiceBox.appendChild(choiceButton);
-  });
-  $("#clueDialog").showModal();
-}
-
-function answerRoomChallenge(choice, choiceButton) {
-  const challenge = ROOM_CHALLENGES[state.pendingRoomKey];
-  if (choice !== challenge.answer) {
-    changeScore(-5);
-    choiceButton.disabled = true;
-    choiceButton.classList.add("wrong-choice");
-    $("#clueChallengeFeedback").textContent = "그 답은 단서와 맞지 않습니다. 다시 생각해 보세요.";
-    return;
-  }
-  const key = state.pendingRoomKey;
-  const button = state.pendingRoomButton;
-  $("#clueDialog").close();
-  state.pendingRoomKey = null;
-  state.pendingRoomButton = null;
+function collectRoomItem(key, button) {
   button.classList.add("found");
   if (key in SAMPLES) {
     state.foundSamples.add(key);
@@ -689,6 +644,7 @@ function inspectTarget() {
   $("#measureSampleName").textContent = sample.name;
   state.hintUsed = false;
   $("#measurementForm").reset();
+  $("#autoSizeCalculation").textContent = "접안 눈금 수를 입력하면 실제 크기가 자동 계산됩니다.";
   showScreen("measure");
   setFeedback(`${sample.name} 발견! 양 끝의 주황색 점선 사이에 있는 접안 눈금 수를 읽어 보세요.`, "success");
   drawMeasurement();
@@ -752,6 +708,20 @@ function checkMeasurement(event) {
   setFeedback(`${sample.name}의 실제 크기를 정확히 측정했습니다!`, "success");
 }
 
+function updateAutomaticSize() {
+  const divisionValue = $("#divisionInput").value;
+  if (divisionValue === "" || !state.selectedSample) {
+    $("#sizeInput").value = "";
+    $("#autoSizeCalculation").textContent = "접안 눈금 수를 입력하면 실제 크기가 자동 계산됩니다.";
+    return;
+  }
+  const divisions = Number(divisionValue);
+  const calibration = LENSES[state.lens].calibration;
+  const size = Number((divisions * calibration).toFixed(2));
+  $("#sizeInput").value = size;
+  $("#autoSizeCalculation").textContent = `${divisions}눈금 × ${calibration} μm = ${size} μm`;
+}
+
 function showHint() {
   if (!state.hintUsed) { state.hintUsed = true; changeScore(-5); }
   const sample = SAMPLES[state.selectedSample];
@@ -768,7 +738,7 @@ function nextCase() {
   if (remainingFound.length) enterSetup();
   else {
     showScreen("room");
-    setFeedback("아직 찾지 못한 표본이 있습니다. 방 안의 남은 물음표를 조사하세요.");
+    setFeedback("아직 찾지 못한 표본이 있습니다. 방 안의 남은 물건을 직접 조사하세요.");
   }
 }
 
@@ -821,6 +791,7 @@ window.addEventListener("keydown", event => {
 });
 
 $("#measurementForm").addEventListener("submit", checkMeasurement);
+$("#divisionInput").addEventListener("input", updateAutomaticSize);
 $("#measureHint").addEventListener("click", showHint);
 $("#nextCase").addEventListener("click", nextCase);
 $("#backToRoom").addEventListener("click", () => showScreen("room"));
