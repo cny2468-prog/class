@@ -27,17 +27,19 @@ main{max-width:1500px;margin:auto;padding:0 clamp(14px,4vw,62px) 60px}.game-intr
 .measurement-view canvas{height:360px}.measurement-form{margin-top:18px;text-align:right}.measurement-equation{display:grid;grid-template-columns:1fr auto .75fr auto 1fr;align-items:end;gap:10px;text-align:center}.measurement-equation label{display:grid;gap:6px;color:var(--muted);font-size:10px;text-align:left}.measurement-equation label:last-child{grid-template-columns:1fr auto}.measurement-equation label:last-child>b{padding:10px 0}.measurement-equation label:last-child:before{content:"표본의 실제 크기";grid-column:1/3}.measurement-equation label:last-child input{min-width:0}.measurement-equation>span{padding-bottom:10px;color:var(--coral);font-weight:900}.measurement-equation>div{padding:9px;border-radius:9px;background:var(--mint)}.measurement-equation small,.measurement-equation strong{display:block}.measurement-equation small{color:var(--muted);font-size:9px}.measurement-form button{margin:16px 0 0 8px}.result-card{max-width:610px;margin:60px auto;padding:45px;text-align:center;border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,#f4fbf7,white);box-shadow:var(--shadow)}.result-icon{display:grid;place-items:center;width:74px;height:74px;margin:0 auto 18px;border-radius:50%;color:white;background:var(--teal);font-size:35px}.result-card h2{margin:4px 0;color:var(--deep);font-size:30px}.result-card>p:not(.eyebrow){color:var(--muted)}.case-stamp{display:inline-flex;align-items:center;gap:12px;margin:20px;padding:12px 18px;border:2px dashed var(--coral);border-radius:12px;transform:rotate(-2deg)}.case-stamp span{font-size:10px}.case-stamp strong{color:var(--coral);font:700 25px Georgia}.result-card button{margin:4px}.complete-dialog-icon{font-size:50px}
 dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24px 24px 8px 24px;color:var(--ink);background:var(--cream);box-shadow:0 30px 90px rgba(0,0,0,.28);text-align:left}dialog::backdrop{background:rgba(8,33,36,.65);backdrop-filter:blur(4px)}.dialog-heading{display:flex;justify-content:space-between}.dialog-heading h2,dialog>h2{margin:0;color:var(--deep)}.dialog-heading>button{border:0;background:none;cursor:pointer;font-size:27px}.guide-list{list-style:none;margin:20px 0;padding:0}.guide-list li{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}.guide-list li>span{color:var(--coral);font:700 18px Georgia}.guide-list strong{font-size:13px}.guide-list p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.5}.clue-dialog>p:not(.eyebrow){color:var(--muted);font-size:13px;line-height:1.6}.clue-choices{display:grid;gap:9px;margin:18px 0}.clue-choices button{padding:12px 14px;border:1px solid var(--line);border-radius:10px;color:var(--deep);background:white;cursor:pointer;font-weight:800;text-align:left}.clue-choices button:hover{border-color:var(--teal);background:var(--mint)}.clue-choices button.wrong-choice{color:#873c2b;border-color:#e6aaa0;background:#ffebe5}.clue-challenge-feedback{min-height:20px;margin-bottom:0!important;color:var(--teal)!important;font-weight:800}
 .feedback>span{background:var(--deep)}.feedback.error>span{background:#873c2b}.feedback.success>span{background:#245e43}
-.hotspot{width:64px;height:64px;color:transparent;background:transparent;box-shadow:none;animation:none}.hotspot span,.hotspot b{display:none!important}.hotspot:hover,.hotspot:focus{background:transparent;box-shadow:none}.hotspot:focus-visible{outline:2px dashed rgba(23,59,63,.55);outline-offset:2px}.hotspot.found{color:transparent;background:transparent}.hotspot.found:after{content:"✓";position:absolute;left:50%;top:50%;display:grid;place-items:center;width:25px;height:25px;transform:translate(-50%,-50%);border-radius:50%;color:white;background:var(--teal);font-size:13px}.hotspot.wrong{background:transparent}.measurement-equation input[readonly]{color:var(--teal);background:#e4f2ec}.auto-size-calculation{margin:10px 0 0!important;color:var(--teal);font-size:11px;font-weight:900;text-align:center}
+.room-stage-banner{display:flex;align-items:center;gap:14px;margin:-4px 0 16px;padding:15px 18px;border:2px solid #f0b29f;border-radius:16px;background:#fff0e9;box-shadow:0 8px 20px rgba(239,106,76,.12)}.room-stage-banner>span{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;color:white;background:var(--coral);font-size:17px;font-weight:900}.room-stage-banner strong{display:block;color:#9a3f2c;font-size:16px}.room-stage-banner p{margin:3px 0 0;color:#8b6359;font-size:11px;line-height:1.45}.bread-prop{position:absolute;left:63%;bottom:91px;width:28px;height:13px;border-radius:45% 55% 40% 45%;background:#d6a34b;box-shadow:inset 0 3px #edc777}.swab-prop{position:absolute;left:58%;bottom:110px;width:55px;height:5px;border-radius:9px;background:#f5f5ee;transform:rotate(-12deg)}.swab-prop:before,.swab-prop:after{content:"";position:absolute;top:-3px;width:12px;height:11px;border-radius:50%;background:#eef4f1}.swab-prop:before{left:-5px}.swab-prop:after{right:-5px}.mold-prop{position:absolute;right:15%;top:246px;width:23px;height:18px;border-radius:50%;background:radial-gradient(circle,#667c58 0 18%,transparent 20%),#9fb18f;background-size:8px 8px;opacity:.9}.magnifier-pickup{position:absolute;z-index:5;left:51%;bottom:88px;display:grid;place-items:center;width:85px;height:82px;padding:0;border:0;background:transparent;cursor:pointer;animation:magnifier-bounce 1.2s infinite}.magnifier-pickup span{font-size:58px;filter:drop-shadow(0 5px 5px rgba(23,59,63,.24))}.magnifier-pickup b{position:absolute;top:-24px;padding:6px 10px;border-radius:999px;color:white;background:var(--coral);font-size:10px;white-space:nowrap}@keyframes magnifier-bounce{50%{transform:translateY(-7px)}}.room-scene .hotspot{visibility:hidden;width:34px;height:34px;color:white;background:var(--coral);box-shadow:0 0 0 6px rgba(239,106,76,.2);opacity:0;pointer-events:none;animation:pulse 1.7s infinite;transition:opacity .25s}.room-scene.magnifier-ready{cursor:none}.room-scene.magnifier-ready .hotspot{visibility:visible;opacity:1;pointer-events:auto;cursor:none}.room-scene .hotspot span{display:inline!important}.room-scene .hotspot b{display:none!important}.room-scene .hotspot.found{color:white;background:var(--teal);box-shadow:none;animation:none}.room-scene .hotspot.found:after{display:none}.hotspot-yeast{left:64%;bottom:96px}.hotspot-cheek{left:59%;bottom:122px}.hotspot-mold{right:14%;top:244px}.magnifier-cursor{position:absolute;z-index:7;display:none;pointer-events:none;font-size:70px;line-height:1;transform:translate(-37%,-36%);filter:drop-shadow(0 8px 8px rgba(23,59,63,.3))}.magnifier-cursor.active{display:block}.inspection-panel{position:absolute;z-index:10;inset:34px;display:grid;grid-template-columns:minmax(180px,.85fr) minmax(240px,1.15fr);align-items:center;gap:25px;padding:28px;border:3px solid #f0c37a;border-radius:28px;background:rgba(255,253,248,.98);box-shadow:0 22px 60px rgba(23,59,63,.28);cursor:default}.inspection-visual{display:grid;place-items:center;aspect-ratio:1;border:14px solid rgba(255,255,255,.8);border-radius:50%;color:var(--deep);background:radial-gradient(circle at 40% 35%,white,var(--inspection-color,#e7bf75));box-shadow:0 0 0 7px #3b6766,0 12px 30px rgba(23,59,63,.2);font-size:74px}.inspection-copy h3{margin:3px 0 9px;color:var(--deep);font-size:25px}.inspection-copy>p:not(.eyebrow){margin:0;color:var(--muted);font-size:12px;line-height:1.7}.inspection-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:20px}.inspection-actions button{cursor:pointer}.measurement-equation input[readonly]{color:var(--teal);background:#e4f2ec}.auto-size-calculation{margin:10px 0 0!important;color:var(--teal);font-size:11px;font-weight:900;text-align:center}
 @media(max-width:950px){.game-shell{grid-template-columns:1fr}.detective-panel{border-left:0;border-top:1px solid var(--line)}.game-intro{min-height:170px}.game-intro>p{display:none}.setup-layout{grid-template-columns:1fr}.microscope-diagram{min-height:520px}.top-status span{display:none}.top-status span:last-child{display:block}.search-layout{grid-template-columns:1fr}.search-controls{display:grid;grid-template-columns:180px 1fr;gap:15px}}
 @media(max-width:620px){.site-header{height:65px;padding:0 12px}.brand small{display:none}.ghost-button{padding:8px 10px;font-size:10px}.top-status{display:none}main{padding:0 10px 35px}.game-intro{min-height:145px}.game-intro h1{font-size:34px}.quest-step b{display:none}.quest-progress>i{margin:0 5px}.game-screen{padding:18px 12px;min-height:610px}.scene-heading h2{font-size:19px}.room-scene{height:450px}.hotspot b{display:none!important}.game-shell{border-radius:18px}.setup-layout{grid-template-columns:1fr}.microscope-diagram{min-height:480px}.scope-base{width:300px}.part-slot small{display:none}.formula-row{flex-wrap:wrap}.search-controls{display:block}.measurement-equation{grid-template-columns:1fr auto 1fr}.measurement-equation>div{grid-column:3}.measurement-equation>span:nth-of-type(2){display:none}.measurement-equation label:last-child{grid-column:1/4}.detective-panel{padding:25px 17px}}
+@media(max-width:620px){.room-stage-banner{padding:11px 12px}.room-stage-banner strong{font-size:13px}.room-stage-banner p{font-size:9px}.inspection-panel{inset:15px;grid-template-columns:1fr;gap:12px;padding:18px}.inspection-visual{width:125px;margin:auto;border-width:9px;font-size:50px}.inspection-copy h3{font-size:20px}.inspection-actions{margin-top:12px}.magnifier-cursor{font-size:56px}}
 @media(prefers-reduced-motion:reduce){.hotspot{animation:none}}
+.magnifier-pickup{left:48%}
 
 </style>
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#game"><span class="brand-mark">μ</span><span><strong>미크론 탐정단</strong><small>방 안의 작은 세계</small></span></a>
-    <div class="top-status"><span>발견 <strong id="foundCount">0</strong>/4</span><span>측정 완료 <strong id="measuredCount">0</strong>/4</span><span>점수 <strong id="scoreValue">100</strong></span></div>
+    <div class="top-status"><span>발견 <strong id="foundCount">0</strong>/7</span><span>측정 완료 <strong id="measuredCount">0</strong>/7</span><span>점수 <strong id="scoreValue">100</strong></span></div>
     <button class="ghost-button" id="helpButton" type="button">게임 방법</button>
   </header>
 
@@ -57,13 +59,15 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
     <section class="game-shell">
       <div class="scene-column">
         <section class="game-screen active" id="roomScreen" data-screen="room" aria-labelledby="roomTitle">
-          <div class="scene-heading"><div><p class="eyebrow">SCENE 01 · 탐정의 방</p><h2 id="roomTitle">방 안의 물건을 직접 눌러 조사하세요</h2></div><span class="status-chip">탐색 중</span></div>
+          <div class="scene-heading"><div><p class="eyebrow">SCENE 01 · 탐정의 방</p><h2 id="roomTitle">책상 위 돋보기를 먼저 들어 탐색을 시작하세요</h2></div><span class="status-chip" id="roomStatusChip">탐색 준비</span></div>
+          <div class="room-stage-banner" id="roomStageBanner"><span>1</span><div><strong>먼저 책상 위 돋보기를 드세요!</strong><p>돋보기가 있어야 방 안의 작은 흔적과 도구를 자세히 조사할 수 있습니다.</p></div></div>
           <div class="room-scene" id="roomScene" aria-label="여러 물건이 놓인 방 안 탐색 장면">
             <div class="room-window"><span></span><span></span><span></span><span></span></div><div class="curtain left"></div><div class="curtain right"></div>
             <div class="wall-picture">작은 것이<br>세상을 바꾼다</div><div class="shelf"><span>BOOK</span><span>SCIENCE</span><span>LAB</span></div>
             <div class="desk"><div></div></div><div class="cabinet"><span></span><span></span></div>
             <div class="plant"><i></i><i></i><i></i><b></b></div><div class="fishbowl"><i></i></div><div class="rug"></div>
-            <div class="microscope-prop"><i></i><b></b><span></span></div>
+            <div class="microscope-prop"><i></i><b></b><span></span></div><div class="bread-prop"></div><div class="swab-prop"></div><div class="mold-prop"></div>
+            <button class="magnifier-pickup" id="magnifierPickup" type="button"><span>🔍</span><b>돋보기 들기</b></button>
             <button class="hotspot hotspot-microscope" data-find="microscope" type="button"><span>?</span><b>책상 위 수상한 기구</b></button>
             <button class="hotspot hotspot-ocular" data-find="ocular" type="button"><span>?</span><b>서랍 속 작은 유리판</b></button>
             <button class="hotspot hotspot-stage" data-find="stage" type="button"><span>?</span><b>장식장 속 눈금판</b></button>
@@ -71,9 +75,14 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
             <button class="hotspot hotspot-onion" data-find="onion" type="button"><span>?</span><b>화분 옆 양파 껍질</b></button>
             <button class="hotspot hotspot-pollen" data-find="pollen" type="button"><span>?</span><b>창가의 꽃가루</b></button>
             <button class="hotspot hotspot-paramecium" data-find="paramecium" type="button"><span>?</span><b>화병의 고인 물</b></button>
+            <button class="hotspot hotspot-yeast" data-find="yeast" type="button"><span>?</span><b>책상 위 빵 부스러기</b></button>
+            <button class="hotspot hotspot-cheek" data-find="cheek" type="button"><span>?</span><b>서랍 옆 면봉</b></button>
+            <button class="hotspot hotspot-mold" data-find="mold" type="button"><span>?</span><b>오래된 책의 얼룩</b></button>
             <button class="hotspot hotspot-picture" data-decoy="picture" type="button"><span>?</span><b>벽의 액자</b></button>
             <button class="hotspot hotspot-books" data-decoy="books" type="button"><span>?</span><b>선반 위 책</b></button>
             <button class="hotspot hotspot-rug" data-decoy="rug" type="button"><span>?</span><b>바닥의 양탄자</b></button>
+            <div class="magnifier-cursor" id="magnifierCursor" aria-hidden="true">🔍</div>
+            <section class="inspection-panel hidden" id="inspectionPanel" aria-live="polite"><div class="inspection-visual" id="inspectionVisual">?</div><div class="inspection-copy"><p class="eyebrow">MAGNIFIED VIEW</p><h3 id="inspectionTitle">확대 관찰</h3><p id="inspectionDescription"></p><div class="inspection-actions"><button class="ghost-button" id="leaveInspection" type="button">그냥 두기</button><button class="primary-button" id="collectInspection" type="button">수집하기</button></div></div></section>
           </div>
           <div class="room-actions"><p><strong>탐색 현황</strong><span id="roomClue">방 안의 물건을 직접 눌러 조사하세요.</span></p><button class="primary-button" id="goSetup" type="button" disabled>현미경실로 이동</button></div>
         </section>
@@ -122,16 +131,16 @@ dialog{width:min(560px,calc(100% - 26px));padding:29px;border:0;border-radius:24
       </div>
 
       <aside class="detective-panel">
-        <p class="eyebrow">DETECTIVE NOTE</p><h2 id="missionTitle">방 안을 직접 조사하라</h2><p id="missionText">방 안의 물건을 눌러 현미경 도구와 조사할 표본을 자유롭게 수집하세요.</p>
-        <div class="feedback" id="feedback" role="status" aria-live="polite"><span>i</span><p>방 안의 물건을 직접 눌러 현미경 도구와 표본인지 확인하세요.</p></div>
-        <h3>수집 가방</h3><div class="inventory" id="inventory"><div data-inventory="microscope"><span>🔬</span><b>현미경</b><small>미발견</small></div><div data-inventory="ocular"><span>╂</span><b>접안 마이크로미터</b><small>미발견</small></div><div data-inventory="stage"><span>▥</span><b>대물 마이크로미터</b><small>미발견</small></div></div>
+        <p class="eyebrow">DETECTIVE NOTE</p><h2 id="missionTitle">돋보기부터 준비하라</h2><p id="missionText">책상 위 돋보기를 먼저 든 다음 작은 흔적과 현미경 도구를 확대해 조사하세요.</p>
+        <div class="feedback" id="feedback" role="status" aria-live="polite"><span>i</span><p>책상 위에서 반짝이는 돋보기를 눌러 먼저 들어 주세요.</p></div>
+        <h3>수집 가방</h3><div class="inventory" id="inventory"><div data-inventory="magnifier"><span>🔍</span><b>돋보기</b><small>미발견</small></div><div data-inventory="microscope"><span>🔬</span><b>현미경</b><small>미발견</small></div><div data-inventory="ocular"><span>╂</span><b>접안 마이크로미터</b><small>미발견</small></div><div data-inventory="stage"><span>▥</span><b>대물 마이크로미터</b><small>미발견</small></div></div>
         <h3>표본 보관함</h3><div class="sample-tray" id="sampleTray"><p>아직 수집한 표본이 없습니다.</p></div>
         <details class="concept-note"><summary>핵심 개념 확인</summary><p>접안 마이크로미터에는 정해진 단위가 없습니다. 대물렌즈를 바꿀 때마다 1눈금이 10 μm인 대물 마이크로미터와 비교해 보정해야 합니다. 보정할 때 두 눈금의 0이 아니라 임의의 눈금선끼리 맞춰도 됩니다.</p></details>
       </aside>
     </section>
   </main>
 
-  <dialog id="helpDialog"><div class="dialog-heading"><div><p class="eyebrow">HOW TO PLAY</p><h2>미크론 탐정 수사 순서</h2></div><button type="button" data-close-dialog>×</button></div><ol class="guide-list"><li><span>01</span><div><strong>방 안의 물건을 직접 조사해요</strong><p>별도 표시나 단서 없이 물건을 눌러 현미경, 마이크로미터와 표본을 자유롭게 수집합니다.</p></div></li><li><span>02</span><div><strong>현미경을 조립해요</strong><p>두 마이크로미터를 장착하고 관찰할 대물렌즈 배율을 직접 선택합니다.</p></div></li><li><span>03</span><div><strong>눈금을 보정해요</strong><p>임의의 두 눈금선을 맞춘 뒤 다시 일치하는 지점까지 칸 수를 세면 보정값이 자동 계산됩니다.</p></div></li><li><span>04</span><div><strong>생물을 찾아 측정해요</strong><p>표본이 차지한 접안 눈금 수를 입력하면 실제 크기가 자동 계산됩니다.</p></div></li></ol><button class="primary-button wide" type="button" data-close-dialog>수사 시작</button></dialog>
+  <dialog id="helpDialog"><div class="dialog-heading"><div><p class="eyebrow">HOW TO PLAY</p><h2>미크론 탐정 수사 순서</h2></div><button type="button" data-close-dialog>×</button></div><ol class="guide-list"><li><span>01</span><div><strong>돋보기를 먼저 들어요</strong><p>책상 위 돋보기를 누르면 방 안의 물음표가 나타납니다.</p></div></li><li><span>02</span><div><strong>돋보기로 확대해요</strong><p>돋보기를 물음표 위에 가져가 확대상을 보고 수집할지 결정합니다.</p></div></li><li><span>03</span><div><strong>현미경을 조립하고 보정해요</strong><p>도구를 장착해 눈금을 보정하고 원하는 대물렌즈 배율을 선택합니다.</p></div></li><li><span>04</span><div><strong>생물을 찾아 측정해요</strong><p>표본이 차지한 접안 눈금 수를 입력하면 실제 크기가 자동 계산됩니다.</p></div></li></ol><button class="primary-button wide" type="button" data-close-dialog>수사 시작</button></dialog>
   <dialog id="completeDialog"><div class="complete-dialog-icon">🏅</div><p class="eyebrow">ALL CASES SOLVED</p><h2>방 안의 작은 세계를 모두 밝혔습니다!</h2><p>접안 마이크로미터 보정부터 실제 크기 계산까지 완벽하게 해냈어요.</p><button class="primary-button wide" id="restartGame" type="button">처음부터 다시 수사</button></dialog>
   <script>
 "use strict";
@@ -146,13 +155,26 @@ const SAMPLES = {
   euglena: { name: "유글레나", source: "어항의 초록 물", icon: "◈", color: "#76aa62", shape: "euglena", actualSize: 25, lens: 40, target: { x: 820, y: 145 } },
   onion: { name: "양파 표피세포", source: "화분 옆 양파 껍질", icon: "▱", color: "#a8c98d", shape: "cell", actualSize: 70, lens: 10, target: { x: 185, y: 525 } },
   pollen: { name: "꽃가루", source: "창가에 떨어진 가루", icon: "✺", color: "#e2ad48", shape: "round", actualSize: 30, lens: 40, target: { x: 835, y: 535 } },
-  paramecium: { name: "짚신벌레", source: "화병의 고인 물", icon: "◌", color: "#65a9bd", shape: "oval", actualSize: 125, lens: 4, target: { x: 205, y: 145 } }
+  paramecium: { name: "짚신벌레", source: "화병의 고인 물", icon: "◌", color: "#65a9bd", shape: "oval", actualSize: 125, lens: 4, target: { x: 205, y: 145 } },
+  yeast: { name: "효모", source: "책상 위 빵 부스러기", icon: "●", color: "#c4935b", shape: "round", actualSize: 10, lens: 40, target: { x: 510, y: 585 } },
+  cheek: { name: "구강 상피세포", source: "서랍 옆 면봉", icon: "⬡", color: "#d58f9d", shape: "cell", actualSize: 60, lens: 10, target: { x: 675, y: 225 } },
+  mold: { name: "곰팡이 포자", source: "오래된 책의 얼룩", icon: "✣", color: "#758b68", shape: "round", actualSize: 15, lens: 40, target: { x: 365, y: 455 } }
 };
 
 const ITEM_NAMES = {
+  magnifier: "돋보기",
   microscope: "현미경",
   ocular: "접안 마이크로미터",
   stage: "대물 마이크로미터"
+};
+
+const ROOM_INSPECTIONS = {
+  microscope: { icon: "🔬", title: "현미경", description: "작은 표본을 확대해 관찰하는 기구입니다. 현미경실에서 사용하려면 수집해야 합니다." },
+  ocular: { icon: "╂", title: "접안 마이크로미터", description: "접안렌즈 안에 넣는 단위 없는 눈금판입니다. 접안 1눈금의 크기를 보정할 때 필요합니다." },
+  stage: { icon: "▥", title: "대물 마이크로미터", description: "1눈금이 10 μm인 기준자입니다. 재물대에 놓고 접안 눈금과 비교합니다." },
+  picture: { icon: "🖼️", title: "벽의 액자", description: "글귀가 적힌 평범한 액자입니다. 현미경 수사에는 필요하지 않아 보입니다." },
+  books: { icon: "📚", title: "선반 위 책", description: "과학책 여러 권입니다. 책 자체는 표본이나 현미경 도구가 아닙니다." },
+  rug: { icon: "▰", title: "바닥의 양탄자", description: "먼지가 조금 묻은 양탄자입니다. 지금 수집할 물건은 아닙니다." }
 };
 
 const $ = selector => document.querySelector(selector);
@@ -161,12 +183,14 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
 const state = {
   phase: "room",
-  equipment: { microscope: false, ocular: false, stage: false },
+  equipment: { magnifier: false, microscope: false, ocular: false, stage: false },
   foundSamples: new Set(),
   measuredSamples: new Set(),
   installed: { ocular: false, stage: false },
   selectedSample: null,
   lens: 10,
+  magnifierHeld: false,
+  inspectionButton: null,
   calibrationOffset: 66,
   alignmentConfirmed: false,
   alignmentOcularIndex: 0,
@@ -180,7 +204,7 @@ const state = {
 };
 
 const missionCopy = {
-  room: ["방 안을 직접 조사하라", "방 안의 물건을 눌러 현미경과 두 종류의 마이크로미터, 조사할 표본을 자유롭게 수집하세요."],
+  room: ["돋보기부터 준비하라", "책상 위 돋보기를 먼저 든 다음 물음표에 가져가 현미경 도구와 표본을 확대 조사하세요."],
   setup: ["현미경을 올바르게 준비하라", "접안렌즈와 재물대의 위치를 확인하고 두 마이크로미터를 알맞게 장착하세요."],
   calibrate: ["접안 눈금의 값을 구하라", "임의의 눈금선 하나를 맞춘 뒤 다시 일치하는 지점까지 칸 수를 세어 보정값을 구하세요."],
   search: ["슬라이드 속 생물을 찾아라", "재물대를 움직여 생물 신호를 추적하고 십자선 중앙에서 관찰하세요."],
@@ -223,6 +247,10 @@ function showScreen(phase) {
   const copy = missionCopy[phase];
   $("#missionTitle").textContent = copy[0];
   $("#missionText").textContent = copy[1];
+  if (phase === "room" && state.magnifierHeld) {
+    $("#missionTitle").textContent = "돋보기로 확대 조사하라";
+    $("#missionText").textContent = "마우스를 움직이면 돋보기가 따라갑니다. 물음표에 가져가 확대상을 확인하세요.";
+  }
   updateProgress();
   window.scrollTo({ top: Math.max(0, $(".game-shell").offsetTop - 90), behavior: "smooth" });
   requestAnimationFrame(resizeCanvases);
@@ -255,28 +283,79 @@ function updateRoomClue() {
   const foundCount = Object.values(state.equipment).filter(Boolean).length + state.foundSamples.size;
   const remaining = Object.keys(ITEM_NAMES).length + Object.keys(SAMPLES).length - foundCount;
   if (remaining > 0) {
-    $("#roomClue").textContent = `방 안의 물건을 직접 눌러 조사하세요. 아직 찾지 못한 물건 ${remaining}개`;
+    $("#roomClue").textContent = state.magnifierHeld
+      ? `돋보기를 물음표에 가져가 확대하세요. 아직 찾지 못한 수집품 ${remaining}개`
+      : "책상 위 돋보기를 먼저 들어야 조사를 시작할 수 있습니다.";
   } else {
     $("#roomClue").textContent = "현미경 도구와 표본을 모두 찾았습니다. 수집한 표본을 조사하세요.";
   }
 }
 
+function pickUpMagnifier() {
+  if (state.magnifierHeld) return;
+  state.magnifierHeld = true;
+  state.equipment.magnifier = true;
+  $("#roomScene").classList.add("magnifier-ready");
+  $("#magnifierPickup").classList.add("hidden");
+  $("#roomTitle").textContent = "돋보기를 물음표에 가져가 확대 조사하세요";
+  $("#roomStatusChip").textContent = "확대 탐색";
+  $("#roomStageBanner").innerHTML = "<span>2</span><div><strong>돋보기를 물음표 위로 움직이세요!</strong><p>확대상을 살펴본 뒤 수집할지 그냥 둘지 직접 선택하세요.</p></div>";
+  $("#missionTitle").textContent = "돋보기로 확대 조사하라";
+  $("#missionText").textContent = "마우스를 움직이면 돋보기가 따라갑니다. 물음표에 가져가 확대상을 확인하세요.";
+  setFeedback("돋보기를 들었습니다! 이제 나타난 물음표 위로 돋보기를 움직여 보세요.", "success");
+  updateRoomClue();
+  updateCollectionUI();
+}
+
 function findRoomItem(button) {
   const key = button.dataset.find;
+  if (!state.magnifierHeld) {
+    setFeedback("책상 위 돋보기를 먼저 들어야 확대 조사할 수 있습니다.", "error");
+    return;
+  }
   if (button.classList.contains("found")) {
-    setFeedback(key in SAMPLES ? `${SAMPLES[key].name} 표본은 이미 보관함에 있습니다.` : `${ITEM_NAMES[key]}은 이미 수집했습니다.`);
+    if (key in SAMPLES) setFeedback(`${SAMPLES[key].name} 표본은 이미 보관함에 있습니다.`);
+    else if (key in ITEM_NAMES) setFeedback(`${ITEM_NAMES[key]}은 이미 수집했습니다.`);
+    else setFeedback("이미 확대해 확인한 곳입니다. 다른 물음표를 조사해 보세요.");
     return;
   }
-  if (!key) {
-    changeScore(-3);
-    button.classList.remove("wrong");
-    void button.offsetWidth;
-    button.classList.add("wrong");
-    window.setTimeout(() => button.classList.remove("wrong"), 450);
-    setFeedback("이곳에는 현미경 도구나 채취할 표본이 없습니다. 다른 물건을 조사해 보세요.", "error");
+  showInspection(button);
+}
+
+function showInspection(button) {
+  if (!state.magnifierHeld || !$("#inspectionPanel").classList.contains("hidden")) return;
+  const key = button.dataset.find || button.dataset.decoy;
+  const sample = SAMPLES[key];
+  const detail = sample
+    ? { icon: sample.icon, title: sample.name, description: `${sample.source}을(를) 확대하니 ${sample.name}이 있을 법한 미세한 흔적이 보입니다.` }
+    : ROOM_INSPECTIONS[key];
+  state.inspectionButton = button;
+  $("#inspectionVisual").textContent = detail.icon;
+  $("#inspectionVisual").style.setProperty("--inspection-color", sample ? sample.color : "#d9a552");
+  $("#inspectionTitle").textContent = detail.title;
+  $("#inspectionDescription").textContent = detail.description;
+  $("#collectInspection").textContent = button.dataset.find ? "수집하기" : "수집해 보기";
+  $("#inspectionPanel").classList.remove("hidden");
+  $("#magnifierCursor").classList.remove("active");
+}
+
+function closeInspection() {
+  $("#inspectionPanel").classList.add("hidden");
+  state.inspectionButton = null;
+}
+
+function collectInspection() {
+  const button = state.inspectionButton;
+  if (!button) return;
+  const key = button.dataset.find;
+  closeInspection();
+  if (key) {
+    collectRoomItem(key, button);
     return;
   }
-  collectRoomItem(key, button);
+  changeScore(-3);
+  button.classList.add("found");
+  setFeedback("확대해 보니 수사에 필요한 물건이 아니었습니다. 다른 물음표를 조사해 보세요.", "error");
 }
 
 function collectRoomItem(key, button) {
@@ -288,6 +367,7 @@ function collectRoomItem(key, button) {
   } else {
     state.equipment[key] = true;
     const descriptions = {
+      magnifier: "돋보기를 들었습니다. 이제 방 안의 물음표를 확대할 수 있습니다.",
       microscope: "현미경을 발견했습니다. 작은 표본을 확대해 관찰할 수 있습니다.",
       ocular: "접안 마이크로미터를 발견했습니다. 접안렌즈 안에 넣어 사용합니다.",
       stage: "대물 마이크로미터를 발견했습니다. 재물대에 놓아 접안 눈금을 보정합니다."
@@ -746,7 +826,22 @@ function resetGame() {
   window.location.reload();
 }
 
-$$('.hotspot').forEach(button => button.addEventListener("click", () => findRoomItem(button)));
+$("#magnifierPickup").addEventListener("click", pickUpMagnifier);
+$$('.hotspot').forEach(button => {
+  button.addEventListener("pointerenter", () => findRoomItem(button));
+  button.addEventListener("click", () => findRoomItem(button));
+});
+$("#roomScene").addEventListener("pointermove", event => {
+  if (!state.magnifierHeld || !$("#inspectionPanel").classList.contains("hidden")) return;
+  const rect = $("#roomScene").getBoundingClientRect();
+  const cursor = $("#magnifierCursor");
+  cursor.style.left = `${event.clientX - rect.left}px`;
+  cursor.style.top = `${event.clientY - rect.top}px`;
+  cursor.classList.add("active");
+});
+$("#roomScene").addEventListener("pointerleave", () => $("#magnifierCursor").classList.remove("active"));
+$("#leaveInspection").addEventListener("click", closeInspection);
+$("#collectInspection").addEventListener("click", collectInspection);
 $("#goSetup").addEventListener("click", enterSetup);
 $("#eyepieceSlot").addEventListener("click", () => installTool("ocular"));
 $("#stageSlot").addEventListener("click", () => installTool("stage"));
