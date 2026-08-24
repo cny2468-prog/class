@@ -240,7 +240,7 @@ function setFeedback(message, type = "info") {
 }
 
 function changeScore(amount) {
-  state.score = Math.max(40, state.score + amount);
+  state.score = clamp(state.score + amount, 40, 100);
   $("#scoreValue").textContent = state.score;
 }
 
